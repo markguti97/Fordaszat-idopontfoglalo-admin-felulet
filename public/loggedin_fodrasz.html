@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>AdminBarber</title>
+
+    <style>
+        html {
+            height: 100%;
+        }
+
+        .idopont {
+            display: flex;
+            border-top: thin solid black;
+            height: 60px;
+            padding: 5px;
+        }
+
+        .delete {
+            font-size: 1.5em;
+        }
+
+        span {
+            width: 220px;
+        }
+
+        .reserveid {
+            width: 300px;
+        }
+
+        .save {
+            display: none;
+            font-size: 1.5em;
+            width: 50px;
+        }
+
+        body {
+            font-family: 'Inconsolata', monospace;
+            font-size: 1.5em;
+            height: 100%;
+            width: 100%;
+            background-image: url(img/hatter2.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 300px;
+        }
+
+        #ezegydiv {
+            width: 1300px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #ezegydiv span {
+            width: 60px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            margin-bottom: 250px;
+            margin-left: 1300px;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:visited {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+
+</head>
+<a href="admin_fodrasz.html">Kilépés</a>
+
+<body>
+    <h1 style="font-weight: 1000;" id="h1">Üdvözlünk, </h1>
+
+    <h2>Vendégeid által foglalt időpontok:</h2>
+    <br>
+    <h3 style="color:blueviolet;">Kattints duplán az részletekre a szerkesztéshez!</h3>
+    <br>
+    <div style="font-weight: 700;" id="ezegydiv">
+        <span class="nev">Név</span>
+        <span class="datum">Dátum</span>
+        <span class="ora">Idő</span>
+        <span class="reserveID">ID</span>
+        <span></span>
+        <span></span>
+    </div>
+    <div id="foglalasok">
+
+    </div>
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="script_loggedin.js"></script>
+</body>
+
+</html>

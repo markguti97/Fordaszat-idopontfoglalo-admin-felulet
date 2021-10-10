@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>AdminBarber</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+</head>
+
+<style>
+    input {
+        background: transparent;
+    }
+
+    select {
+        background: transparent;
+    }
+
+    html {
+        height: 100%;
+    }
+
+    body {
+        font-family: 'Inconsolata', monospace;
+        font-size: 1.5em;
+        height: 100%;
+        width: 100%;
+        background-image: url(img/hatter2.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 350px;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    a:hover {
+        color: black;
+        text-decoration: underline;
+    }
+
+    a:visited {
+        text-decoration: none;
+        color: black;
+    }
+</style>
+
+<body>
+
+    <a href="index_fodrasz.html" id="reserve">Foglaló felület</a>
+
+    <form onsubmit="return false;" action="">
+        <span>Felhasználó: </span><input type="text" name="" id="username">
+    </form>
+    <form onsubmit="return false;" action="">
+        <span>Jelszó: </span><input type="password" name="" id="password">
+    </form>
+    <button class="btn btn-info" id="login">Belépés</button>
+    <div style="color: red;" id="invalid"></div>
+    <div id="content"></div>
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="script_admin.js"></script>
+
+</body>
+
+</html>

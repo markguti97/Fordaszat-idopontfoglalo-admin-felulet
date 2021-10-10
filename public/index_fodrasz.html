@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <title>ProBarber</title>
+</head>
+<style>
+    html {
+        height: 100%;
+    }
+
+    select {
+        min-width: 150px;
+    }
+
+    .selectedtime {
+        border: thin solid black;
+    }
+
+    body {
+        height: 100%;
+        background-image: url(img/hatter.jpg);
+        font-family: 'Inconsolata', monospace;
+        font-size: 1.5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-position: center;
+        background-size: cover;
+    }
+
+    form {
+        width: 800px;
+    }
+
+    input {
+        background: transparent;
+    }
+
+    select {
+        background: transparent;
+    }
+
+    #divdate {
+        margin-top: 30px;
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    #admin {
+        margin-top: 40px;
+        font-weight: 400;
+        margin-bottom: 30px;
+        margin-right: 1200px;
+    }
+
+    #admin:hover {
+        text-decoration: underline;
+    }
+
+    button {
+        font-weight: 1.5em;
+    }
+
+    #customer {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    #selectidopontok {
+        padding-left: 140px;
+    }
+
+    .ido {
+        width: 65px;
+    }
+
+    #title {
+        font-size: 1.5em;
+        font-weight: 800;
+        margin-bottom: 20px;
+    }
+
+    #nincs {
+        width: 500px;
+        color: red;
+    }
+</style>
+
+<body>
+    <div style="height: 100px;">
+        <p id="admin">Admin felület</p>
+    </div>
+    <div id="title">Időpontfoglalás</div>
+
+    <form action="">
+        <span style="font-weight: 700;">Fodrászok:</span>
+        <select name="" id="selectfodraszok" value="">
+            <option value="">Kérlek, válassz egy fodrászt!</option>
+        </select>
+
+    </form>
+    <form action="">
+        <div id="divdate">
+            <span style="font-weight: 700;">Dátum:</span>
+            <input id="datum" type="date">
+        </div>
+    </form>
+    <button class="btn btn-info" id="searchButton">Keress!</button>
+    <form action="">
+
+        <span style="font-weight: 700;">Időpontok:</span>
+        <div id="selectidopontok">
+        </div>
+
+        <span style="font-weight: 700;">Név:</span>
+        <input type="text" id="customer" required="required" pattern="[A-Za-z  ]{1,20}">
+
+    </form>
+
+    <button class="btn btn-info" id="makereserve">Lefoglalom!</button>
+    <div id="success"></div>
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="script_fodrasz.js"></script>
+
+</body>
+
+</html>
