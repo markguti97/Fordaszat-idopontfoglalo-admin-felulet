@@ -3,6 +3,7 @@ Ez egy fodrász szalon időpontfoglaló rendszere és admin felülete, melyet Ja
 A képzés a következőket foglalta magában: JavaScript, JQuery, NodeJS, ExpressJS, MongoDB
 
 Telepítési útmutató
+
 0. A telepítéshez és futtatáshoz szükségünk van NodeJS-re, így először ezt szükséges telepítenünk: https://nodejs.org/en/download/
 1. Letöltjük a .zip fájlt, majd kicsomagoljuk, az így kapott könyvtárat pedig megnyitjuk egy IDE felületen. (pl.: VS Code)
 2. Terminállal belépünk ebbe a könyvtárba, majd az 'npm install' paranccsal telepítjük a további szükséges fájlokat (node_modules).
